@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand } from 'reactstrap';
+import Header from './Components/HeaderComponent';
 import './App.css';
+
+import Calendar from './Components/CalendarComponent';
+
 
 class App extends Component {
     render() {
         return (
             <div className="App">
-                <Navbar dark color="dark">
-                <div className="container">
-                    <NavbarBrand href="/">Tipsimply.</NavbarBrand>
-                </div>
-                </Navbar>
+                <Header />
+                <Calendar />
             </div>
         );
     }
